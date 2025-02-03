@@ -8,7 +8,7 @@ active le :
     .\env\Scripts\activate
 
 install les dépendances :
-    pip install -r requirements.txt
+    pip install .
 
 lance le project :
     python main.py
