@@ -1,0 +1,11 @@
+créé un ven avec :
+    python -m venv env
+
+active le :
+    .\env\Scripts\activate
+
+install les dépendances :
+    pip install -r requirements.txt
+
+lance le project :
+    python main.py
