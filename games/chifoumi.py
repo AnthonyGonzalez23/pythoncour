@@ -1,4 +1,5 @@
 import random
+from games.utils import afficher_gagnant, afficher_score
 
 def main():
     userScore = 0
@@ -10,14 +11,14 @@ def main():
         print(f"Vous avez choisi: {moi}")
         print(f"L'ordinateur a choisi: {pc}")
         result = resultat(moi, pc)
-        print(result)
+        afficher_gagnant(result)
 
         if result == "Vous gagnez!":
             userScore += 1
         elif result == "L'ordinateur gagne!":
             pcScore += 1
 
-        print(f"Score: Vous {userScore} - Ordinateur {pcScore}")
+        afficher_score(userScore, pcScore)
         print("Voulez-vous jouer une autre partie? (oui/non)")
         if input().lower() != 'oui':
             break
@@ -46,4 +47,5 @@ def resultat(moi, pc):
     else:
         return "L'ordinateur gagne!"
 
-main()
+if __name__ == "__main__":
+    main()
