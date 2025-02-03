@@ -1,5 +1,5 @@
 import random
-from games.utils import afficher_gagnant, afficher_score
+from .utils import afficher_gagnant, afficher_score
 
 def main():
     userScore = 0

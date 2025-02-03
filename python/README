@@ -1,3 +1,6 @@
+va dans le dossier python :
+    cd python
+
 créé un env avec :
     python -m venv env
 
