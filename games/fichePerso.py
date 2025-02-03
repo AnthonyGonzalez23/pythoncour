@@ -20,8 +20,9 @@ def main():
         except ValueError:
             print("Veuillez entrer un nombre valide.")
 
-    for i in range(int(nbRow)):
+    for i in range(nbRow):
         fichePerso()
         print("\n")
 
-main()
+if __name__ == "__main__":
+    main()
